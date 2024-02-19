@@ -3,9 +3,7 @@
 # This template allows you to validate your C++ application.
 # The workflow allows running tests and code linting on the default branch.
 
-
 image: gcc:latest
-
 
 pipelines:
   default:
@@ -13,7 +11,7 @@ pipelines:
         - step:
             name: Build
             script:
-              - apt update && apt install cmake
+              - apt update && apt install cmake -y
               # Execute your C++ application after compilation to check success
               - cmake -S . -B build
               - cmake --build build --target all
