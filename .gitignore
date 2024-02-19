@@ -7,6 +7,10 @@
 node_modules/
 dist/
 
+# C build folder
+build/
+.cache/
+
 # Compiled Java class files
 *.class
 
