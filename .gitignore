@@ -11,6 +11,9 @@ dist/
 build/
 .cache/
 
+# report folder
+test-reports/
+
 # Compiled Java class files
 *.class
 
