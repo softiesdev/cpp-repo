@@ -28,4 +28,5 @@ target_link_libraries(
 )
 
 include(GoogleTest)
-gtest_discover_tests(cpp_repo_test)
+file(MAKE_DIRECTORY report)
+gtest_discover_tests(cpp_repo_test XML_OUTPUT_DIR ${CMAKE_CURRENT_LIST_DIR}/test-report)
