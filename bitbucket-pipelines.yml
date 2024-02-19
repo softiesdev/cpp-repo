@@ -15,3 +15,11 @@ pipelines:
               # Execute your C++ application after compilation to check success
               - cmake -S . -B build
               - cmake --build build --target all
+        - step:
+            name: Test
+            script:
+              - apt update && apt install cmake -y
+              # Execute your C++ application after compilation to check success
+              - cmake -S . -B build
+              - cmake --build build --target all
+              - cd build && ctest .
