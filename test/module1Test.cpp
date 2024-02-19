@@ -9,3 +9,5 @@ TEST(HelloTest, BasicAssertions) {
 }
 
 TEST(AnotherTest, Basic) { EXPECT_GE(69, 1); }
+
+TEST(AnotherTest, BasicFailing) { EXPECT_EQ(69, 420); }
