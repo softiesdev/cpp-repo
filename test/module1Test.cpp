@@ -10,6 +10,6 @@ TEST(HelloTest, BasicAssertions) {
 
 TEST(AnotherTest, Basic) { EXPECT_GE(69, 1); }
 
-TEST(AnotherTest, Basic2) { EXPECT_GE(420, 69); }
+TEST(AnotherTest, Basic2) { EXPECT_GE(420, 67); }
 
 TEST(AnotherTest, BasicFailing) { EXPECT_EQ(69, 420); }
